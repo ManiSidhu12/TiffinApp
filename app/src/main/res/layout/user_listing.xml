@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/lay"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimary">
+
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="Users"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Search for keyword"
+        android:textColor="@android:color/black"
+        android:padding="2dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:gravity="start|center"
+        android:layout_marginStart="10dp"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:textSize="13sp"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="35dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="5dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/spin_bg">
+        <EditText
+            android:id="@+id/edt_srch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:layout_marginStart="5dp"
+            android:gravity="start|center"
+            android:singleLine="true"></EditText>
+
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recycler_users"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"></android.support.v7.widget.RecyclerView>
+
+</LinearLayout>
